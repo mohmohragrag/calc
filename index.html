@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>حساب أقصى تخانة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>حساب أقصى تخانة يمكن سحبها</h2>
+
+  <label>قدرة الموتور (حصان):</label><br>
+  <input type="number" id="power" placeholder="مثال: 325"><br>
+
+  <label>عرض الشريحة (مم):</label><br>
+  <input type="number" id="width" placeholder="مثال: 682"><br>
+
+  <label>السرعة (متر/دقيقة):</label><br>
+  <input type="number" id="speed" placeholder="مثال: 10"><br>
+
+  <label>نوع المادة:</label><br>
+  <select id="material">
+    <option value="250">حديد طري (ST37)</option>
+    <option value="275">ST44</option>
+    <option value="355" selected>ST52</option>
+  </select><br>
+
+  <button onclick="calculate()">احسب التخانة</button>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
